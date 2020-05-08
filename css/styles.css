@@ -1,0 +1,195 @@
+:root{
+    /* primary*/
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Dark-Green: #4aaf82;
+
+    /*accent*/
+    --Blue: hsl(248, 32%, 49%);
+    
+    /*neutral*/
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: var(--Red);
+    background-image: url("./../images/bg-intro-mobile.png");
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2em;
+}
+
+.wrapper{
+    padding: 50px 20px ;
+}
+
+.intro {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.right{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-big{
+    display: block;
+    width: 325px;
+    height: 80px;
+    background: var(--Blue);
+    border: 0;
+    padding: 0 75px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-top: 50px;
+    line-height: 1.7em; 
+    box-shadow: 0px 9px rgba(0,0,0,0.2); 
+}
+
+.btn-big-bold{
+    font-weight: 600;
+}
+
+
+.form-container{
+    display: block;
+    background-color: white;
+    margin-top: 20px;
+    width: 325px;
+    height: 430px;
+    border-radius: 10px;
+    padding-top: 5px;
+    text-align: center;
+    box-shadow: 0px 9px rgba(0,0,0,0.2);
+}
+
+.form-input{
+    display: block;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    width: 280px;
+    height: 50px;
+    margin: 20px 20px;
+    text-indent: 15px;
+}
+
+.form-input::placeholder{
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.form-input:invalid{
+    border: 1px solid var(--Dark-Green);
+}
+
+.form-button{
+    font-family: 'Poppins', sans-serif;
+    width: 280px;
+    height: 50px;
+    background-color: var(--Green);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 3px var(--Dark-Green);
+}
+
+
+.form-text{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    font-size: 10px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.form-text-red{
+    font-weight: 600;
+    color: var(--Red);
+}
+
+@media screen and (min-width: 1440px){
+    .body{
+        background-image: url(./../images/bg-intro-desktop.png);
+    }
+
+    .wrapper{
+        padding:100px  150px
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+    }
+
+    h1{
+       font-size: 50px;
+       text-align: left;
+       width: 500px;
+    }
+
+    .intro{
+        text-align: left;
+        vertical-align: centre;
+        width: 500px;
+    }
+    
+    .left{
+        text-align: center;
+        padding: 25% 0;
+    }
+
+    .right{
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .btn-big{
+        width: 540px;
+        height: 60px;
+    }
+
+    .form-container{
+        width: 500px;
+        text-align: center;
+        padding: 20px;
+        height: 400px;
+    }
+
+    form{
+        display: inline-block;
+        width: 500px;
+        text-align: center;
+        
+    }
+
+    .form-input{
+        margin: 15px;
+        width: 460px;
+    }
+    .form-button{
+        width: 460px;
+    }
+}
